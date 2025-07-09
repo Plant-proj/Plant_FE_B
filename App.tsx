@@ -12,7 +12,7 @@ function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <View style={styles.container}>
+    <View className="flex-1 bg-white">
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <NewAppScreen templateFileName="App.tsx" />
     </View>
